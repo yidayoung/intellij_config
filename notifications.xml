@@ -1,0 +1,7 @@
+<application>
+  <component name="NotificationConfiguration">
+    <notification groupId="Platform and Plugin Updates" displayType="NONE" />
+    <notification groupId="Plugin Error" shouldLog="false" />
+    <notification groupId="Project Loading Error" displayType="NONE" shouldLog="false" />
+  </component>
+</application>

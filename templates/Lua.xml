@@ -1,0 +1,67 @@
+<templateSet group="Lua">
+  <template name="role_data_set" value="---@return $DATA_NAME$&#10;function role_data.get_$DATA_NAME$()&#10;    return get_info(ROLE_DATA_LIST.$DATA_NAME$.key)&#10;end&#10;&#10;---set_$DATA_NAME$&#10;---@param info $DATA_NAME$&#10;---@param is_dirty boolean&#10;function role_data.set_$DATA_NAME$(info, is_dirty)&#10;    set_info(ROLE_DATA_LIST.$DATA_NAME$.key, info, is_dirty)&#10;end" description="role_data.set_xx_info() and role_data.get_xx_info()" toReformat="true" toShortenFQNames="true">
+    <variable name="DATA_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="lr" value="local $MODULE$ = {}  &#10;&#10;&#10;&#10;return $MODULE$" description="local module  return module" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="fileNameWithoutExtension()" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="req2" value="local $VAL$ = require &quot;$PATH$.$VAL$&quot;" description="require with local val support path" toReformat="false" toShortenFQNames="true">
+    <variable name="VAL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="req1" value="local $VAL$ = require &quot;$VAL$&quot;" description="require with local val" toReformat="false" toShortenFQNames="true">
+    <variable name="VAL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="lr2" value="local $MODULE$ = {}  &#10;&#10;&#10;&#10;return $MODULE$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="cs_func" value="---cs_$MSG$_check&#10;---@param cs_$MSG$ cs_$MSG$&#10;local function cs_$MSG$_check(cs_$MSG$)&#10;    &#10;end&#10;&#10;local function cs_$MSG$_success()&#10;    --- @type sc_$MSG$&#10;    local sc_$MSG$ = {}&#10;    smbb_misc.send_client($SC_MSG$, sc_$MSG$)&#10;end&#10;&#10;---cs_$MSG$_error&#10;---@param errno number&#10;local function cs_$MSG$_error(errno)&#10;    smbb_misc.send_client($SC_MSG$, {result = errno})&#10;end&#10;&#10;local function cs_$MSG$_exception()&#10;    smbb_misc.send_client($SC_MSG$, {result = ERR_CODE.SYS_ERR})&#10;end&#10;&#10;---@param  cs_$MSG$  cs_$MSG$&#10;function $MODULE$.cs_$MSG$(cs_$MSG$)&#10;    local cs_handle = CS_HANDLE()&#10;    cs_handle.success_handle =  cs_$MSG$_success&#10;    cs_handle.error_handle =  cs_$MSG$_error&#10;    cs_handle.exception_handle = cs_$MSG$_exception&#10;    cs_handle:run(cs_$MSG$_check, cs_$MSG$)&#10;end" description="cs handle function" toReformat="false" toShortenFQNames="true">
+    <variable name="MSG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SC_MSG" expression="" defaultValue="sc_$MSG$" alwaysStopAt="true" />
+    <variable name="MODULE" expression="" defaultValue="fileNameWithoutExtension" alwaysStopAt="false" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="cs_fun2" value="---cs_$MSG$_check&#10;---@param cs_$MSG$ cs_$MSG$&#10;local function cs_$MSG$_check(roleid, cs_$MSG$)&#10;    &#10;end&#10;&#10;---cs_$MSG$_success&#10;---@param roleid number&#10;local function cs_$MSG$_success(roleid, )&#10;    &#10;end&#10;&#10;---cs_$MSG$_error&#10;---@param roleid number&#10;---@param errno number&#10;local function cs_$MSG$_error(roleid, errno)&#10;    smbb_misc.ex_send(roleid, $SC_MSG$, { result = errno })&#10;end&#10;&#10;---cs_$MSG$_exception&#10;---@param roleid number&#10;local function cs_$MSG$_exception(roleid)&#10;    smbb_misc.ex_send(roleid, $SC_MSG$, { result = ERR_CODE.SYS_ERR })&#10;end&#10;&#10;---@param  cs_$MSG$  cs_$MSG$&#10;function $MODULE$.cs_$MSG$(roleid, cs_$MSG$)&#10;    local cs_handle = CS_HANDLE()&#10;    cs_handle.success_handle =  cs_$MSG$_success&#10;    cs_handle.error_handle =  cs_$MSG$_error&#10;    cs_handle.exception_handle = cs_$MSG$_exception&#10;    cs_handle:server_run(cs_$MSG$_check, roleid, cs_$MSG$)&#10;end" description="cs handle function for other service" toReformat="false" toShortenFQNames="true">
+    <variable name="MSG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SC_MSG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE" expression="" defaultValue="client_fun" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="@type" value="---@type " description="add type desc" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="LUA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="record_define" value="--- @class $RECORD$&#10;local $RECORD$_t = { _t = &quot;$RECORD$&quot;&#10;,roleid                  = 0                            --- 角色ID&#10;,$_$&#10;}&#10;RECORD.$RECORD$_t = $RECORD$_t" description="define record" toReformat="false" toShortenFQNames="true">
+    <variable name="RECORD" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="_" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="lv" value="local $VAL$ = $VAL$" description="local val = global" toReformat="false" toShortenFQNames="true">
+    <variable name="VAL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

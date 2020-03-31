@@ -1,0 +1,77 @@
+<templateSet group="erlang">
+  <template name="if" value="if&#10;    $GUARD$ -&gt; &#10;        $EXPR1$;&#10;    true -&gt; &#10;        $EXPR2$&#10;end$END$" description="if statement" toReformat="true" toShortenFQNames="true">
+    <variable name="GUARD" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="case" value="case $EXPR$ of&#10;    $MATCH$ $GUARD$ -&gt; &#10;        $END$;&#10;end" description="case statement" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="MATCH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="GUARD" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="T" value="try&#10;    $SELECTION$&#10;catch&#10;    $CLASS$:$PATTERN$ $GUARD$ -&gt; $END$&#10;end " description="surround with try...catch" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PATTERN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="GUARD" expression="when $GUARD$" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="B" value="begin&#10;    $SELECTION$&#10;end" description="surround with begin...end" toReformat="false" toShortenFQNames="true">
+    <context />
+  </template>
+  <template name="doc" value="%% @doc&#10;%% @Args &#10;%%     @ &#10;%% @return &#10;%%     @ " description="函数注释" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="ERLANG_CODE" value="true" />
+    </context>
+  </template>
+  <template name="cs" value="cs_$MSG0$(#cs_$MSG${} = Msg) -&gt;&#10;    case ?LCATCH(check_$MSG$(Msg)) of&#10;        {'EXIT',_CheckErrTypeReason} -&gt;&#10;            ?rssend(#sc_$MSG${result=?LANG_SYSTEM_ERROR});&#10;        {error,Reason} -&gt;&#10;            ?rssend(#sc_$MSG${result=Reason});&#10;        {ok,$Args$} -&gt;&#10;            Fun_$MSG2$ = fun() -&gt;&#10;                do_$MSG$($Args$)&#10;                               end,&#10;            case smbb_util:transaction(Fun_$MSG2$) of&#10;                {aborted,_DoErrTypeReason} -&gt;&#10;                    ?rssend(#sc_$MSG${result=?LANG_SYSTEM_ERROR});&#10;                {atomic,{ok,$ARGS2$}} -&gt;&#10;                    ?rssend(#sc_$MSG${result=1})&#10;            end&#10;    end.&#10;    &#10;check_$MSG$(#cs_$MSG${$ARGS0$}) -&gt;&#10;    {ok, $Args$}.&#10;    &#10;do_$MSG$($Args$) -&gt;&#10;    {ok,$ARGS2$}." description="cs协议处理模板" toReformat="true" toShortenFQNames="true">
+    <variable name="MSG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MSG0" expression="snakeCase(MSG)" defaultValue="" alwaysStopAt="false" />
+    <variable name="Args" expression="" defaultValue="[]" alwaysStopAt="true" />
+    <variable name="MSG2" expression="underscoresToCamelCase(MSG)" defaultValue="" alwaysStopAt="false" />
+    <variable name="ARGS2" expression="" defaultValue="[]" alwaysStopAt="true" />
+    <variable name="ARGS0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="ERLANG_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="def" value="-define($NAME$, $VALUE$).$END$" description="Define macro" toReformat="true" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="VALUE" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="data" value="get_$KEY$_info() -&gt;&#10;    case get_$KEY$_info2() of&#10;        #{value := #{?t := r_$KEY$_info} = Info} -&gt;&#10;            Info;&#10;        _ -&gt;&#10;            role_$KEY$:init(role_data:get_roleid(), timer_wheel:nowsec()),&#10;            #{value := #{?t := r_$KEY$_info} = Info} = get_$KEY$_info2(),&#10;            Info&#10;    end.&#10;get_$KEY$_info2() -&gt;&#10;    erlang:get(?role_$KEY$).&#10;set_$KEY$_info(Info) -&gt;&#10;    set_$KEY$_info(Info, true).&#10;set_$KEY$_info(Info, Dirty) -&gt;&#10;    ?SET_INFO(?role_$KEY$, Info, Dirty)." description="role_data get|set Fun" toReformat="false" toShortenFQNames="true">
+    <variable name="KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="ERLANG_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="def2" value="-define($NAME$, $VALUE$).$END$" description="Define macro by Value" toReformat="true" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="capitalizeAndUnderscore(VALUE)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="ERLANG_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="fa" value="false" description="false atom" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="ERLANG_CODE" value="true" />
+    </context>
+  </template>
+  <template name="tr" value="true" description="true atom" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="ERLANG_CODE" value="true" />
+    </context>
+  </template>
+  <template name="un" value="undefined" description="undefined atom" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="ERLANG_CODE" value="true" />
+    </context>
+  </template>
+  <template name="pa" value="pass" description="pass atom" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="ERLANG_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

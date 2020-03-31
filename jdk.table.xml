@@ -1,0 +1,276 @@
+<application>
+  <component name="ProjectJdkTable">
+    <jdk version="2">
+      <name value="Kahlua" />
+      <type value="Lua SDK" />
+      <homePath value="" />
+      <roots>
+        <annotationsPath>
+          <root type="composite" />
+        </annotationsPath>
+        <classPath>
+          <root type="composite">
+            <root url="file://$APPLICATION_PLUGINS_DIR$/Lua/stdlibrary" type="simple" />
+          </root>
+        </classPath>
+        <javadocPath>
+          <root type="composite" />
+        </javadocPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="LuaJ" />
+      <type value="Lua SDK" />
+      <homePath value="" />
+      <roots>
+        <annotationsPath>
+          <root type="composite" />
+        </annotationsPath>
+        <classPath>
+          <root type="composite">
+            <root url="file://$APPLICATION_PLUGINS_DIR$/Lua/stdlibrary" type="simple" />
+          </root>
+        </classPath>
+        <javadocPath>
+          <root type="composite" />
+        </javadocPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 2.7" />
+      <type value="Python SDK" />
+      <version value="Python 2.7.14" />
+      <homePath value="C:/Python27/python.exe" />
+      <roots>
+        <annotationsPath>
+          <root type="composite" />
+        </annotationsPath>
+        <classPath>
+          <root type="composite">
+            <root url="file://C:/Python27/DLLs" type="simple" />
+            <root url="file://C:/Python27/Lib" type="simple" />
+            <root url="file://C:/Python27/Lib/lib-tk" type="simple" />
+            <root url="file://C:/Python27" type="simple" />
+            <root url="file://C:/Python27/Lib/site-packages" type="simple" />
+            <root url="jar://C:/Python27/Lib/site-packages/GAutomator2-0.0.1-py2.7.egg!/" type="simple" />
+            <root url="file://$USER_HOME$/.IdeaIC2019.3/system/python_stubs/-762174762" type="simple" />
+            <root url="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/python-skeletons" type="simple" />
+            <root url="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stdlib/2" type="simple" />
+            <root url="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stdlib/2and3" type="simple" />
+            <root url="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/third_party/2" type="simple" />
+            <root url="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/third_party/2and3" type="simple" />
+          </root>
+        </classPath>
+        <javadocPath>
+          <root type="composite" />
+        </javadocPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Lua" />
+      <type value="Lua SDK" />
+      <homePath value="" />
+      <roots>
+        <annotationsPath>
+          <root type="composite" />
+        </annotationsPath>
+        <classPath>
+          <root type="composite" />
+        </classPath>
+        <javadocPath>
+          <root type="composite" />
+        </javadocPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="1.8" />
+      <type value="JavaSDK" />
+      <version value="java version &quot;1.8.0_11&quot;" />
+      <homePath value="D:/Program Files/Java/jdk1.8.0_11" />
+      <roots>
+        <annotationsPath>
+          <root type="composite">
+            <root url="jar://$APPLICATION_HOME_DIR$/lib/jdkAnnotations.jar!/" type="simple" />
+          </root>
+        </annotationsPath>
+        <classPath>
+          <root type="composite">
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/charsets.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/deploy.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/ext/access-bridge-64.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/ext/cldrdata.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/ext/dnsns.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/ext/jaccess.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/ext/jfxrt.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/ext/localedata.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/ext/nashorn.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/ext/sunec.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/ext/sunjce_provider.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/ext/sunmscapi.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/ext/sunpkcs11.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/ext/zipfs.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/javaws.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/jce.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/jfr.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/jfxswt.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/jsse.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/management-agent.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/plugin.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/resources.jar!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/jre/lib/rt.jar!/" type="simple" />
+          </root>
+        </classPath>
+        <javadocPath>
+          <root type="composite" />
+        </javadocPath>
+        <sourcePath>
+          <root type="composite">
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/src.zip!/" type="simple" />
+            <root url="jar://D:/Program Files/Java/jdk1.8.0_11/javafx-src.zip!/" type="simple" />
+          </root>
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Elixir 1.7.3" />
+      <type value="Elixir SDK" />
+      <version value="Elixir 1.7.3" />
+      <homePath value="C:/Program Files (x86)/Elixir" />
+      <roots>
+        <annotationsPath>
+          <root type="composite" />
+        </annotationsPath>
+        <classPath>
+          <root type="composite">
+            <root url="file://C:/Program Files (x86)/Elixir/lib/eex/ebin" type="simple" />
+            <root url="file://C:/Program Files (x86)/Elixir/lib/elixir/ebin" type="simple" />
+            <root url="file://C:/Program Files (x86)/Elixir/lib/ex_unit/ebin" type="simple" />
+            <root url="file://C:/Program Files (x86)/Elixir/lib/iex/ebin" type="simple" />
+            <root url="file://C:/Program Files (x86)/Elixir/lib/logger/ebin" type="simple" />
+            <root url="file://C:/Program Files (x86)/Elixir/lib/mix/ebin" type="simple" />
+          </root>
+        </classPath>
+        <javadocPath>
+          <root type="composite">
+            <root url="https://hexdoc.pm/elixir" type="simple" />
+            <root url="https://hexdoc.pm/ex_unit" type="simple" />
+            <root url="https://hexdoc.pm/iex" type="simple" />
+            <root url="https://hexdoc.pm/logger" type="simple" />
+            <root url="https://hexdoc.pm/mix" type="simple" />
+            <root url="http://www.erlang.org/documentation/doc-8.0" type="simple" />
+            <root url="https://hexdoc.pm/eex" type="simple" />
+          </root>
+        </javadocPath>
+        <sourcePath>
+          <root type="composite">
+            <root url="file://C:/Program Files (x86)/Elixir/lib/eex/lib" type="simple" />
+            <root url="file://C:/Program Files (x86)/Elixir/lib/elixir/lib" type="simple" />
+            <root url="file://C:/Program Files (x86)/Elixir/lib/ex_unit/lib" type="simple" />
+            <root url="file://C:/Program Files (x86)/Elixir/lib/iex/lib" type="simple" />
+            <root url="file://C:/Program Files (x86)/Elixir/lib/logger/lib" type="simple" />
+            <root url="file://C:/Program Files (x86)/Elixir/lib/mix/lib" type="simple" />
+          </root>
+        </sourcePath>
+      </roots>
+      <additional erlang-sdk-name="Erlang 22" />
+    </jdk>
+    <jdk version="2">
+      <name value="Erlang 22" />
+      <type value="Erlang SDK" />
+      <version value="Erlang/OTP 22 [erts-10.5]" />
+      <homePath value="C:/Program Files/erl10.5" />
+      <roots>
+        <annotationsPath>
+          <root type="composite" />
+        </annotationsPath>
+        <classPath>
+          <root type="composite">
+            <root url="file://C:/Program Files/erl10.5/lib" type="simple" />
+          </root>
+        </classPath>
+        <javadocPath>
+          <root type="composite">
+            <root url="http://www.erlang.org/documentation/doc-10.5" type="simple" />
+          </root>
+        </javadocPath>
+        <sourcePath>
+          <root type="composite">
+            <root url="file://C:/Program Files/erl10.5/lib" type="simple" />
+          </root>
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Erlang R16B" />
+      <type value="Erlang SDK" />
+      <version value="Erlang/OTP R16B [erts-5.10.1]" />
+      <homePath value="D:/Program Files/erl5.10.1" />
+      <roots>
+        <annotationsPath>
+          <root type="composite" />
+        </annotationsPath>
+        <classPath>
+          <root type="composite">
+            <root url="file://D:/Program Files/erl5.10.1/lib" type="simple" />
+          </root>
+        </classPath>
+        <javadocPath>
+          <root type="composite">
+            <root url="http://www.erlang.org/documentation/doc-5.10.1" type="simple" />
+          </root>
+        </javadocPath>
+        <sourcePath>
+          <root type="composite">
+            <root url="file://D:/Program Files/erl5.10.1/lib" type="simple" />
+          </root>
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Erlang 18" />
+      <type value="Erlang SDK" />
+      <version value="Erlang/OTP 18 [erts-7.3]" />
+      <homePath value="D:/Program Files/erl7.3" />
+      <roots>
+        <annotationsPath>
+          <root type="composite" />
+        </annotationsPath>
+        <classPath>
+          <root type="composite">
+            <root url="file://D:/Program Files/erl7.3/lib" type="simple" />
+          </root>
+        </classPath>
+        <javadocPath>
+          <root type="composite">
+            <root url="http://www.erlang.org/documentation/doc-7.3" type="simple" />
+          </root>
+        </javadocPath>
+        <sourcePath>
+          <root type="composite">
+            <root url="file://D:/Program Files/erl7.3/lib" type="simple" />
+          </root>
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+  </component>
+</application>

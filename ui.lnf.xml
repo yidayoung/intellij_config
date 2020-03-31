@@ -1,0 +1,10 @@
+<application>
+  <component name="DependencyUISettings">
+    <option name="UI_FLATTEN_PACKAGES" value="false" />
+    <option name="UI_COMPACT_EMPTY_MIDDLE_PACKAGES" value="false" />
+  </component>
+  <component name="UISettings">
+    <option name="FONT_FACE" value="Consolas" />
+    <option name="PRESENTATION_MODE_FONT_SIZE" value="28" />
+  </component>
+</application>

@@ -1,0 +1,3 @@
+local ${NAME} = {
+}
+return ${NAME}

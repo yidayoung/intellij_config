@@ -1,0 +1,43 @@
+<application>
+  <component name="CommunityFileTypes" version="11">
+    <ignoreFiles list="CVS;SCCS;RCS;rcs;.DS_Store;.svn;.pyc;.pyo;*.pyc;*.pyo;.git;*.hprof;_svn;.hg;*.lib;*~;__pycache__;.bundle;*.rbc;" />
+    <extensionMap>
+      <mapping ext="prc" type="DBN-PSQL" />
+      <mapping ext="tps" type="DBN-PSQL" />
+      <mapping ext="tpb" type="DBN-PSQL" />
+      <mapping ext="pkg" type="DBN-PSQL" />
+      <mapping ext="pkb" type="DBN-PSQL" />
+      <mapping ext="pks" type="DBN-PSQL" />
+      <mapping ext="tpe" type="DBN-PSQL" />
+      <mapping ext="fnc" type="DBN-PSQL" />
+      <mapping ext="trg" type="DBN-PSQL" />
+      <mapping ext="vw" type="DBN-SQL" />
+      <mapping pattern="165redPacket" type="PLAIN_TEXT" />
+      <mapping pattern="erlcinfo" type="PLAIN_TEXT" />
+      <mapping ext="proto" type="PLAIN_TEXT" />
+      <mapping ext="tagx" type="XML" />
+      <mapping ext="jspx" type="XML" />
+    </extensionMap>
+    <setting name="fileTypeChangedCounter" value="15" />
+  </component>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping ext="escript" type="Erlang" />
+      <removed_mapping ext="groovy" approved="true" type="Groovy" />
+      <mapping pattern="基于内网搭建一个http文件分享服务器" type="Markdown" />
+      <mapping pattern="基于Ubuntu安装和配置docker" type="Markdown" />
+      <mapping pattern="基于win10自带虚拟机安装Ubuntu" type="Markdown" />
+      <mapping ext="pb" type="Native" />
+      <mapping pattern=".gitkeep" type="PLAIN_TEXT" />
+      <mapping pattern=".fetch" type="PLAIN_TEXT" />
+      <mapping ext="groovy" type="PLAIN_TEXT" />
+      <mapping ext="dag" type="PLAIN_TEXT" />
+      <mapping ext="exp" type="PLAIN_TEXT" />
+      <mapping ext="setting" type="PLAIN_TEXT" />
+      <mapping ext="model" type="PLAIN_TEXT" />
+      <mapping ext="path" type="PLAIN_TEXT" />
+      <mapping pattern="run2" type="Python" />
+      <removed_mapping ext="groovy" approved="true" type="Groovy" />
+    </extensionMap>
+  </component>
+</application>

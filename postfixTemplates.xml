@@ -1,0 +1,78 @@
+<application>
+  <component name="PostfixTemplatesSettings">
+    <option name="providerToDisabledTemplates">
+      <disabled-templates provider="builtin.java">
+        <value>
+          <set>
+            <option value="arg" />
+            <option value="assert" />
+            <option value="com.intellij.codeInsight.template.postfix.templates.CastExpressionPostfixTemplate#.cast" />
+            <option value="com.intellij.codeInsight.template.postfix.templates.ElseStatementPostfixTemplate#.else" />
+            <option value="com.intellij.codeInsight.template.postfix.templates.IfStatementPostfixTemplate#.if" />
+            <option value="com.intellij.codeInsight.template.postfix.templates.InstanceofExpressionPostfixTemplate#.inst" />
+            <option value="com.intellij.codeInsight.template.postfix.templates.InstanceofExpressionPostfixTemplate#.instanceof" />
+            <option value="com.intellij.codeInsight.template.postfix.templates.IntroduceFieldPostfixTemplate#.field" />
+            <option value="com.intellij.codeInsight.template.postfix.templates.IntroduceVariablePostfixTemplate#.var" />
+            <option value="com.intellij.codeInsight.template.postfix.templates.IsNullCheckPostfixTemplate#.null" />
+            <option value="com.intellij.codeInsight.template.postfix.templates.NotExpressionPostfixTemplate#!" />
+            <option value="com.intellij.codeInsight.template.postfix.templates.NotExpressionPostfixTemplate#.not" />
+            <option value="com.intellij.codeInsight.template.postfix.templates.NotNullCheckPostfixTemplate#.nn" />
+            <option value="com.intellij.codeInsight.template.postfix.templates.NotNullCheckPostfixTemplate#.notnull" />
+            <option value="com.intellij.codeInsight.template.postfix.templates.ParenthesizedExpressionPostfixTemplate#.par" />
+            <option value="com.intellij.codeInsight.template.postfix.templates.StreamPostfixTemplate#.stream" />
+            <option value="com.intellij.codeInsight.template.postfix.templates.SwitchStatementPostfixTemplate#.switch" />
+            <option value="com.intellij.codeInsight.template.postfix.templates.TryStatementPostfixTemplate#.try" />
+            <option value="com.intellij.codeInsight.template.postfix.templates.TryWithResourcesPostfixTemplate#.twr" />
+            <option value="for" />
+            <option value="fori" />
+            <option value="format" />
+            <option value="forr" />
+            <option value="iter" />
+            <option value="lambda" />
+            <option value="opt" />
+            <option value="reqnonnull" />
+            <option value="return" />
+            <option value="sout" />
+            <option value="synchronized" />
+            <option value="throw" />
+            <option value="while" />
+          </set>
+        </value>
+      </disabled-templates>
+      <disabled-templates provider="builtin.js">
+        <value>
+          <set>
+            <option value="com.intellij.lang.javascript.template.postfix.JSAwaitPostfixTemplate#.await" />
+            <option value="com.intellij.lang.javascript.template.postfix.JSElseStatementPostfixTemplate#.else" />
+            <option value="com.intellij.lang.javascript.template.postfix.JSForInPostfixTemplate#.forin" />
+            <option value="com.intellij.lang.javascript.template.postfix.JSForInPostfixTemplate#.itin" />
+            <option value="com.intellij.lang.javascript.template.postfix.JSForOfPostfixTemplate#.forof" />
+            <option value="com.intellij.lang.javascript.template.postfix.JSIfInstanceOfPostfixTemplate#.instanceof" />
+            <option value="com.intellij.lang.javascript.template.postfix.JSIfStatementPostfixTemplate#.if" />
+            <option value="com.intellij.lang.javascript.template.postfix.JSIfTypeOfPostfixTemplate#.typeofif" />
+            <option value="com.intellij.lang.javascript.template.postfix.JSIntroduceConstPostfixTemplate#.const" />
+            <option value="com.intellij.lang.javascript.template.postfix.JSIntroduceLetPostfixTemplate#.let" />
+            <option value="com.intellij.lang.javascript.template.postfix.JSIntroduceVarPostfixTemplate#.var" />
+            <option value="com.intellij.lang.javascript.template.postfix.JSLogPostfixTemplate#.log" />
+            <option value="com.intellij.lang.javascript.template.postfix.JSNotExpressionPostfixTemplate#!" />
+            <option value="com.intellij.lang.javascript.template.postfix.JSNotExpressionPostfixTemplate#.not" />
+            <option value="com.intellij.lang.javascript.template.postfix.JSNotNullStatementPostfixTemplate#.notnull" />
+            <option value="com.intellij.lang.javascript.template.postfix.JSNullStatementPostfixTemplate#.null" />
+            <option value="com.intellij.lang.javascript.template.postfix.JSParenthesizedPostfixTemplate#.par" />
+            <option value="com.intellij.lang.javascript.template.postfix.JSReturnStatementPostfixTemplate#.return" />
+            <option value="com.intellij.lang.javascript.template.postfix.JSThrowStatementPostfixTemplate#.throw" />
+            <option value="com.intellij.lang.javascript.template.postfix.JSTypeOfExpressionPostfixTemplate#.typeof" />
+            <option value="com.intellij.lang.javascript.template.postfix.JSUndefPostfixTemplate#.undef" />
+          </set>
+        </value>
+      </disabled-templates>
+      <disabled-templates provider="builtin.ts">
+        <value>
+          <set>
+            <option value="com.intellij.lang.typescript.template.postfix.TypeScriptCastPostfixTemplate#.cast" />
+          </set>
+        </value>
+      </disabled-templates>
+    </option>
+  </component>
+</application>

@@ -1,0 +1,9 @@
+<templateSet group="user">
+  <template name="fld" value="---@field $NAME$ $TYPE$ @%COMMIT%" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

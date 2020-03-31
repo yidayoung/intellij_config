@@ -1,0 +1,17 @@
+<application>
+  <component name="RemoteServers">
+    <remote-server name="win" type="docker">
+      <configuration>
+        <option name="apiUrl" value="tcp://localhost:2375" />
+      </configuration>
+    </remote-server>
+    <remote-server name="mac" type="docker">
+      <configuration>
+        <option name="apiUrl" value="tcp://10.0.11.240:2375" />
+        <option name="pathMappings">
+          <list />
+        </option>
+      </configuration>
+    </remote-server>
+  </component>
+</application>

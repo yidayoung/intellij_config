@@ -1,0 +1,104 @@
+<application>
+  <component name="TemplateSettings">
+    <option name="deletedKeys">
+      <list>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="@doc" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="def" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="def," />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="do" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="if" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="ife" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="case" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="defm" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="defp" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="doc" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="mdoc" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="fn" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="rec" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="test" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="try" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="defs" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="cond" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="defmac" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="defmacp" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="for" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="defpro" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="defi" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="defover" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Elixir" />
+          <option name="key" value="ii" />
+        </TemplateKey>
+      </list>
+    </option>
+  </component>
+</application>
