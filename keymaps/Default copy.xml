@@ -19,7 +19,9 @@
   <action id="EditorSelectLine">
     <keyboard-shortcut first-keystroke="ctrl windows" />
   </action>
-  <action id="EditorToggleCase" />
+  <action id="EditorToggleCase">
+    <keyboard-shortcut first-keystroke="ctrl alt up" />
+  </action>
   <action id="Forward">
     <mouse-shortcut keystroke="button5" />
     <keyboard-shortcut first-keystroke="alt comma" />
@@ -28,6 +30,7 @@
     <keyboard-shortcut first-keystroke="alt l" />
   </action>
   <action id="NextTab" />
+  <action id="PreviousOccurence" />
   <action id="PreviousTab" />
   <action id="QuickJavaDoc">
     <keyboard-shortcut first-keystroke="ctrl q" />
